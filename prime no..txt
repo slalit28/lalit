@@ -1,0 +1,14 @@
+#!/bin/bash
+
+echo  "----------------prime no---------------"
+echo -n " enter no: "
+read n
+for  ((i=1; i<=n; i++))
+do
+        if (( `expr $n%i` == 0 ))
+        then
+                echo "not prime"
+                exit
+        fi
+done
+echo "prime"

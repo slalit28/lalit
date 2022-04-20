@@ -3,7 +3,7 @@
 echo  "----------------prime no---------------"
 echo -n " enter no: "
 read n
-for  ((i=1; i<=n; i++))
+for  ((i=2; i<=n/2; i++))
 do
         if (( `expr $n%i` == 0 ))
         then
